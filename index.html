@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ResetCSS.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class = "header"></div>
+    <div class="flex-container">
+
+        <div class = "top-container">
+            <div class = "glow-button circlebutton" id="1">1</div>
+            <div class = "glow-button circlebutton" id="3">3</div>
+            <div class = "glow-button circlebutton" id="5">5</div> 
+        </div>
+        <div class = "breakup"></div>
+        <div class = "bottom-container">
+            <div class = "glow-button circlebutton" id="2">2</div>
+            <div class = "glow-button circlebutton" id="4">4</div>
+        </div>
+    </div>
+
+    <div id="CalendarModal" class="modal">
+
+            <div class="modal-container">
+                <span class="close" id="closeWindow">&times;</span>
+                <div> Calendar/Date Avaliability</div>
+                <div> Email/Phone number</div>
+                
+            </div>
+    </div>
+
+<script>
+
+var modal = document.getElementById("CalendarModal")
+
+var btn = document.getElementsByClassName("circlebutton")
+
+var close = document.getElementById("closeWindow")
+
+for (var i = 0; i < btn.length; i++) {
+    btn[i].addEventListener('click',openModal,false);
+}
+
+function openModal(){
+    modal.style.display = "block";
+    console.log("Test Sucessful")
+}
+
+close.onclick = function(){
+    modal.style.display="none"
+}
+
+</script>
+</body>
+</html>
