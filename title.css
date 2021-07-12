@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    overflow-x:hidden;
+}
+
+.heading {
+    
+    background-color: rgb(2, 2, 2)
+}
+
+
+
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+.imageContainer img{
+    width: 100vw;
+    max-height: 90vh;
+}
+
+.headingContainer{
+    background-color: rgba(221, 164, 164,0);
+    position:absolute;
+    top:20px;
+    right:10px;
+    font-size: 2em;   
+}
+
+.headingContainer a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.headingContainer a:hover{
+    text-decoration: none;
+    color:rgb(182, 135, 135);
+}
+
+.textContainer{
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color:rgb(255, 255, 255);
+    width: fit-content;
+}
+
+
+.aboutTextContainer{
+    color:white;
+    height: 10vh;
+    display:flex;
+    flex-direction: column;
+}
+
